@@ -1,0 +1,25 @@
+# Крупные бинарные "измерители" — не гонять через обычный git (128MB+ превышает лимит GitHub)
+metrics/
+
+# Word временные файлы
+~$*.docx
+
+# Питон / Jupyter / Colab мусор
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+.venv/
+venv/
+env/
+
+# Артефакты обучения (веса, чекпоинты) — не должны коммититься, обучение идёт внутри ноутбука
+*.safetensors
+*.bin
+*.pt
+*.ckpt
+checkpoints/
+outputs/
+wandb/
+
+# OS
+.DS_Store
